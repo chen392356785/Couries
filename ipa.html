@@ -4,12 +4,79 @@
 	<title></title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="./ipa/css/header_include.min.css">
+
+    <link rel="stylesheet" href="./ipa/css/appView.css">
+    <link rel="stylesheet" href="./ipa/css/viewColorful.css">
 </head>
 <body>
-	<ul>
-	    <li>
-	        <a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/chen392356785/Couries/master/timi.plist">Timi记账</a>
-	    </li>
-	</ul>
+	<div class="row-fluid  margin-bottom-20" style="z-index:-2;">
+    	<div id="header"></div>
+	</div>
+
+	<!--=== Content Part ===-->
+	<div class="container content"> 
+		<div class="view row">
+			<div class="span12 margin-bottom-30 " id="appicon-bg">
+				<img src="./ipa/images/120.png" class="appicon" />
+			</div>
+			<div class="span12" style="text-align:center;padding-top:10px;">
+				<h2 style="color:#333;size:24px;margin-bottom: -5px;">
+					行者企业版
+					<span class="label label-danger signature-label signature_in_house">
+						企业版
+					</span>
+                </h2>
+			</div>
+
+			<div class="span12 gray-text" style="text-align:center;">
+				<ul class="breadcrumb pb-20" >
+					<li>版本：7.1.2.15 (build 0124)</li>
+					<li>大小：49.7 MB</li>
+					<li >更新时间：2019-01-24</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="" class="view row margin-bottom-30 col-md-6 col-md-offset-3" >
+			<div class="col-md-6 col-md-offset-3">
+				<div class="span12 gray-text" style="text-align:center;">
+                	<p style="padding-top:10px;color:#969b9d;">用手机扫描二维码安装</p>
+            	</div>
+            	<div class="span12 gray-text" style="text-align:center;">
+                	<img src="./ipa/images/ipa_qr.png" class="qrcode-merge" />
+            	</div>
+			</div>
+		</div>
+
+		<!-- Start Merge App info -->
+		<div class="row">    
+	        <div class="col-md-8 col-md-offset-2"> 
+	            <hr class="devider devider-dotted" />
+	        </div>
+    	</div>
+
+    	<div id="" class="view row margin-bottom-30">   
+    		<div class="col-md-8 col-md-offset-2 pt-20"> 
+    			<div class="col-md-6" style="border-right:1px solid #e7ebed;">
+    				<div class="row text-center" >
+    					<div class="margin-bottom-20">
+                    		<i class="fa fa-apple" aria-hidden="true" style="font-size:36px;color:#666d71;"></i>
+                		</div>
+                		<p style="color:#969b9d;">
+                			<span style="padding-right:15px;">版本：7.1.2.15 (build 0124)</span>
+                			大小：49.7 MB
+                		</p>
+                		<div class="margin-bottom-20 mt-40">
+                		<a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/chen392356785/Couries/master/manifest.plist" id="down_load"  class="btn-u btn-u-lg " style="padding:8px 40px;">
+                			<img src="./ipa/images/dl.png" class="hide" />
+                			下载 iOS 版
+                		</a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+	</div>
 </body>
 </html>
