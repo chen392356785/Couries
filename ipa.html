@@ -50,6 +50,17 @@
 			</div>
 		</div>
 
+		<!-- Start install -->
+		<div id="" class="view row" style="margin-top:30px;">   
+			<div class="span12 margin-bottom-20" style="text-align:center;display:none;">
+				<div class="spinner">
+					<div id="showtext">正在安装，请按 Home 键在桌面查看</div>
+                	<div class="loading"></div>
+                	<a href="javascript:void(0);" onclick="javascript:install_loading();" id="down_load"  class="btn-u btn-u-lg btn-u-green"><i class="fa fa-download"></i> 点击安装</a>
+				</div>
+			</div>
+		</div>
+
 		<!-- Start Merge App info -->
 		<div class="row">    
 	        <div class="col-md-8 col-md-offset-2"> 
@@ -69,14 +80,30 @@
                 			大小：49.7 MB
                 		</p>
                 		<div class="margin-bottom-20 mt-40">
-                		<a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/chen392356785/Couries/master/manifest.plist" id="down_load"  class="btn-u btn-u-lg " style="padding:8px 40px;">
-                			<img src="./ipa/images/dl.png" class="hide" />
-                			下载 iOS 版
-                		</a>
-    				</div>
+	                		<a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/chen392356785/Couries/master/manifest.plist" id="down_load"  class="btn-u btn-u-lg " style="padding:8px 40px;">
+	                			<img src="./ipa/images/dl.png" class="hide" />
+	                			下载 iOS 版
+	                		</a>
+    					</div>
     			</div>
     		</div>
     	</div>
 	</div>
+
+	<script type="text/javascript">
+		var isMergeApp = '',
+    		submiting = '请稍候...',
+    		submitText = '立即进入',
+    		isMobileRequest = true;
+
+		function install_merge_loading(type) {
+			if (type == 'ios') {
+		       	if (!isMobileRequest) {
+		           alert(askBrowserAlert);
+		           return;
+		       	}
+    		}
+		}
+	</script>
 </body>
 </html>
